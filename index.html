@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <!-- Stars background -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navigation bar section -->
+    <section class="navigation">
+      <a id="logo" href="#introduction">YB</a>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </section>
+
+    <!-- Introduction section -->
+    <section id="introduction" class="introduction">
+      <h1>Hi, I'm Yaroslav </h1>
+      <p>A web developer </p>
+      <div class="btn-container">
+        <a href="#works" class="btn primary-btn">View Projects</a>
+        <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Works section -->
+    <section id="works" class="section-container">
+      <h2 class="section-title">My Works</h2>
+      <p class="section-subtitle">Recent projects I've worked on</p>
+      
+      <div class="cards-content">
+        <div class="card-item">
+          <div class="card-img">
+            <img src="/resources/images/Chess.webp" alt="Chess game" />
+          </div>
+          <h3>Chess Game</h3>
+          <p>A chess game built using React and TypeScript. The game includes features such as move validation, pawn promotion, en passant, and endgame detection.</p>
+          <div class="tag-container">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">CSS</span>
+          </div>
+          <a href="https://jaroshew.github.io/Chess-game/" target="_blank" class="card-btn">View Project</a>
+        </div>
+        
+        <div class="card-item">
+          <div class="card-img">
+            <img src="/resources/images/Tic-tac-toe.webp" alt="Tic-tac-toe" />
+          </div>
+          <h3>Tic-tac-toe</h3>
+          <p>A simple yet interactive Tic-Tac-Toe game built using JavaScript. The game supports both Player vs. Player (PvP) and Player vs. AI (PvE) modes, allowing users to play against a friend or challenge an AI opponent.</p>
+          <div class="tag-container">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="https://jaroshew.github.io/Tic-Tac-Toe/" target="_blank" class="card-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="cards-content second-row">
+        <div class="card-item">
+          <div class="card-img">
+            <img src="/resources/images/Calculator-JS.webp" target="_blank" alt="Calculator-JS" />
+          </div>
+          <h3>Calculator</h3>
+          <p>A basic calculator built with JavaScript. It allows users to perform simple arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+          <div class="tag-container">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="https://jaroshew.github.io/Calculator-JS/" class="card-btn">View Project</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <section id="about" class="section-container alternate-bg">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-content">
+        <p>I'm a web development enthusiast learning both front-end and back-end technologies.</p>
+          
+          <h3>My Skills</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <h4>Front-End</h4>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>Bootstrap / Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React.js</li>
+              </ul>
+            </div>
+            <div class="skill-item">
+              <h4>Back-End</h4>
+              <ul>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+          
+          <h3>Education</h3>
+            <p>Bachelor’s Degree in Computer Science</p>
+            <p>Second-year student (2023 – Present)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience" class="section-container alternate-bg">
+      <h2 class="section-title">My Journey</h2>
+      <p class="section-subtitle">How I transitioned from Dental Technology to Web Development</p>
+      
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Web Developer</h3>
+            <p>Started creating small websites and applications. Applied problem-solving skills to debugging and optimization challenges.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Transition Period</h3>
+            <p>Began learning web development fundamentals while continuing dental work. Completed online courses in HTML, CSS, JavaScript, and responsive design principles.</p>
+          </div>
+        </div>
+      
+
+        <div class="timeline-item">
+          <div class="timeline-date">2019 - 2022</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Dental Technician</h3>
+            <p>Specialized in creating precise dental prosthetics and restorations. Developed strong attention to detail, spatial awareness, and hand-eye coordination working with complex anatomical structures.</p>
+          </div>
+        </div>
+      
+      <div class="dental-to-dev">
+        <h3 class="section-subtitle">How Dental Technology Skills helped me transition to Web Development</h3>
+        <div class="skills-transfer-container">
+          <div class="skill-transfer">
+            <h4>Precision & Attention to Detail</h4>
+            <p>Just as creating precise dental fittings requires attention to detail, I apply the same care to crafting clean, pixel-perfect designs and code.</p>
+          </div>
+          
+          <div class="skill-transfer">
+            <h4>Client-Focused Approach</h4>
+            <p>Understanding the unique needs of patients in dental work helps me create thoughtful, user-centered web experiences.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:jaroshew@gmail.com" class="email-link">jaroshew@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Mažeikiai, Lithuania</p>
+          </div>
+          <div class="contact-item">
+            <h3>Social</h3>
+            <div class="social-links">
+              <a href="https://github.com/Jaroshew" target="_blank" class="social-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="planet-container">
+          <div class="stars-bg"></div>
+          <div class="pulse"></div>
+          <div class="planet"></div>
+          <div class="moon"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Jaroshew. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+    
+    <script src="/script.js"></script>
+  </body>
+</html>
