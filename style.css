@@ -1,6 +1,6 @@
 :root {
     --color-backdrop: hsla(45, 17%, 95%, 0.8);
-    --color-menu-backdrop: hsla(46, 42%, 94%, 0.900);
+    --color-menu-backdrop: hsla(46, 42%, 94%, 0.950);
     --text-primary: hsla(172, 95%, 18%, 1);
     --text-secondary: hsla(172, 70%, 25%, 0.8);
     --accent-color: rgb(251, 145, 23);
@@ -275,7 +275,8 @@ img, picture, svg, video {
         opacity: 0;
         transition: height 0.4s var(--transition-bounce), 
                     opacity 0.4s ease,
-                    padding 0.4s ease;
+                    padding 0.4s ease,
+                    visibility 0s linear 0.4s;
     }
 
     #nav-links.active {
@@ -283,6 +284,10 @@ img, picture, svg, video {
         height: 200px;
         opacity: 1;
         padding: 1rem 0;
+        transition: height 0.4s var(--transition-bounce), 
+                    opacity 0.4s ease,
+                    padding 0.4s ease,
+                    visibility 0s linear 0s;
     }
 
     #nav-links li {
@@ -291,13 +296,14 @@ img, picture, svg, video {
         margin: 0.5rem 0;
         transform: translateY(-20px);
         opacity: 0;
-        transition: transform 0.4s ease, 
-                    opacity 0.4s ease;
+        transition: transform 0s ease, 
+                    opacity 0s ease;
     }
 
     #nav-links.active li {
         transform: translateY(0);
         opacity: 1;
+        transition: transform 0.4s ease, opacity 0.4s ease;
     }
 }
 
