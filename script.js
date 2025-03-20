@@ -224,6 +224,16 @@ planetStyles.textContent = `
     .skills-transfer-container {
       grid-template-columns: 1fr;
     }
+
+    .planet-star {
+      display: none;
+    }
+  }
+
+    @media only screen and (max-width: 960px) {
+    .planet-star {
+      display: none;
+    }
   }
 `;
 document.head.appendChild(planetStyles);
